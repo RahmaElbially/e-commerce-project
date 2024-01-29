@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/all.css">
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>GREENMIND</title>
+</head>
+<body>
+
+    <header>
+        <nav class="container flex items-center justify-between py-8">
+            <ul class="links flex">
+                <h2 class="text-2xl me-20">GREENMIND</h2>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <div class="icons">
+                <ul class="flex">
+                    <li><a href="#"><i class="fas fa-shopping-cart hover:text-backgroundColor relative" id="shoppingCart">
+                        <div class="number">0</div>
+                    </i></a></li>
+                    <li><a href="#"><i class="fas fa-heart hover:text-red-500" id="favourite"></i></a></li>
+                    <li><div class="vertical-line w-[1px] h-8"></div></li>
+
+                    <!-- Login , Regiter Buttons -->
+                    <li class="btns">
+                        <button class="hover:opacity-80" id="loginBtn">Login</button>
+                        <button class="ms-[30px] btn2 hover:opacity-80" id="registerBtn">Register</button>
+                    </li>
+                    
+                    <!-- User Name And Icon -->
+                    <li class="user">
+                        <a href="#" class="relative active"><i class="fas fa-user user-icon"></i></a>
+                        <p class="user-name inline ms-6"></p>
+
+                        <div class="user-btns display-none absolute top-16">
+                            <div class="user-btn1">
+                                <i class="fas fa-cog me-2"></i>
+                                <button class="mb-5">Setting</button>
+                            </div>
+                            <div class="user-btn2">
+                                <i class="fas fa-sign-out-alt me-2"></i>
+                                <button class="log-out">Logout</button>
+                            </div>
+                        </div> <!-- End User Btns -->
+                    </li> <!-- End User Name And Icon -->
+                </ul> <!-- End Icons List -->
+            </div> <!-- End Icons Div -->
+            <div class="bar">
+                <i class="fas fa-bars"></i>
+            </div> <!-- End Bar -->
+        </nav> <!-- End Nav -->
+    </header> <!-- End header -->
+
+    <section>
+        <div class="hidden-div container display-none">
+            <div class="user-data" id="userDataHidden">
+                <a href="#" class="relative active"><i class="fas fa-user user-icon"></i></a>
+                <p class="user-name-hidden inline ms-6"></p>
+            </div>
+            <ul class="hidden-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <ul>
+                    <div class="cart-fav-icon">
+                        <li><a href="#"><i class="fas fa-shopping-cart hover:text-backgroundColor relative" id="shoppingCartHidden">
+                            <div class="number">0</div>
+                        </i></a></li>
+                        <li><a href="#"><i class="fas fa-heart hover:text-red-500" id="favouriteHidden"></i></a></li>
+                    </div>
+
+                    <!-- Login , Regiter Buttons -->
+                    <li class="btns" id="btnsHidden">
+                        <button class="hover:opacity-80" id="loginHidden">Login</button>
+                        <button class="ms-[30px] btn2 hover:opacity-80" id="registerHidden">Register</button>
+                    </li>
+                    
+                    <!-- User Name And Icon -->
+                    <li class="user">
+                        <div class="user-btns" id="userBtnsHidden">
+                            <div class="user-btn1">
+                                <i class="fas fa-cog me-2"></i>
+                                <button>Setting</button>
+                            </div>
+                            <div class="user-btn2">
+                                <i class="fas fa-sign-out-alt me-2"></i>
+                                <button class="log-out" id="LogOut">Logout</button>
+                            </div>
+                        </div> <!-- End User Btns -->
+                    </li> <!-- End User Name And Icon -->
+                </ul> <!-- End Icons List -->
+            </div> <!-- End Icons Div -->
+        </div>
+    </section>
+
+    <section>
+        <div class="container panner font-family">
+            <div class="panner-content flex px-12">
+                <div class="left-content pt-10">
+                   <h2 class="font-extrabold text-5xl w-[350px] mb-7">Buy your dream plants</h2>
+
+                   <div class="statistics flex">
+                        <div class="species">
+                            <h3 class="text-[25px]">50+</h3>
+                            <p>Plant Species</p>
+                        </div>
+                        <div class="vertical-line mx-10 w-[1.5px] h-14"></div>
+                        <div class="customers">
+                            <h3 class="text-[25px]">100+</h3>
+                            <p>Customers</p>
+                        </div>
+                   </div> <!-- End Statistics -->
+
+                   <div class="searchDiv relative mt-10">
+                       <input type="search" placeholder="What are you looking for?">
+                       <i class="fas fa-search search"></i>
+                   </div>
+                </div> <!-- End Left Content -->
+
+                <div class="right-content relative">
+                    <div class="left-arrow"><img src="../Images/left-arrow.png" alt="Left Arrow"></div>
+                    <div class="plant"><img src="../Images/plant.png" alt="Plant Image" class="h-[450px]"></div>
+                    <div class="black-div"></div>
+                    <div class="right-arrow"><img src="../Images/right-arrow.png" alt="Right Arrow"></div>
+                </div> <!-- End Right Content -->
+            </div> <!-- End Panner Content -->
+        </div> <!-- End Panner -->
+    </section>
+
+    <section class="my-16">
+        <div class="best-selling font-family container">
+            <div class="best-selling-content flex">
+                <div class="best-selling-data">
+                    <h3 class="text-3xl font-bold">Best Selling Plants</h3>
+                    <p>Easiest way to healthy life by buying your favorite plants</p>
+                    <div class="see-more w-44 relative">
+                        <button class="hover:opacity-80">See more</button>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </div> <!-- End See More -->
+                </div> <!-- End Best Selling Data -->
+
+                <div class="best-selling-images items-center">
+                    <div class="slide">
+                        <img src="../Images/plant1.png" alt="Plant Image" draggable="false">
+                        <h3 class="mt-5 text-xl font-medium">Natural Plants</h3>
+                        <p class="mt-1 font-medium text-grayColor" price="1400"> &#8369; 1400.00</p>
+                        <div class="shopping-icons flex flex-col justify-around">
+                            <i class="fas fa-heart heart"></i>
+                            <hr>
+                            <i class="fas fa-shopping-cart cart"></i>
+                        </div>
+                    </div> <!-- End Slide -->
+
+                    <div class="slide one">
+                        <img src="../Images/plant2.png" alt="Plant Image" draggable="false">
+                        <h3 class="mt-5 text-xl font-medium">Artificial Plants</h3>
+                        <p class="mt-1 font-medium text-grayColor" price="900"> &#8369; 900.00</p>
+                        <div class="shopping-icons flex flex-col justify-around">
+                            <i class="fas fa-heart heart"></i>
+                            <hr>
+                            <i class="fas fa-shopping-cart cart"></i>
+                        </div>
+                    </div> <!-- End Slide -->
+
+                    <div class="slide">
+                        <img src="../Images/plant3.png" alt="Plant Image" draggable="false">
+                        <h3 class="mt-5 text-xl font-medium">Ornamental Plants</h3>
+                        <p class="mt-1 font-medium text-grayColor" price="3500"> &#8369; 3500.00</p>
+                        <div class="shopping-icons flex flex-col justify-around">
+                            <i class="fas fa-heart heart"></i>
+                            <hr>
+                            <i class="fas fa-shopping-cart cart"></i>
+                        </div>
+                    </div> <!-- End Slide -->
+
+                    <div class="slide">
+                        <img src="../Images/plant4.png" alt="Plant Image" draggable="false">
+                        <h3 class="mt-5 text-xl font-medium">Dracaena song Plants</h3>
+                        <p class="mt-1 font-medium text-grayColor" price="800"> &#8369; 800.00</p>
+                        <div class="shopping-icons flex flex-col justify-around">
+                            <i class="fas fa-heart heart"></i>
+                            <hr>
+                            <i class="fas fa-shopping-cart cart"></i>
+                        </div>
+                    </div> <!-- End Slide -->
+
+                    <div class="slide">
+                        <img src="../Images/plant5.png" alt="Plant Image" draggable="false">
+                        <h3 class="mt-5 text-xl font-medium">Sansevieria Plants</h3>
+                        <p class="mt-1 font-medium text-grayColor" price="2500"> &#8369; 2500.00</p>
+                        <div class="shopping-icons flex flex-col justify-around">
+                            <i class="fas fa-heart heart"></i>
+                            <hr>
+                            <i class="fas fa-shopping-cart cart"></i>
+                        </div>
+                    </div> <!-- End Slide -->
+
+                    <div class="slide">
+                        <img src="../Images/plant6.png" alt="Plant Image" draggable="false">
+                        <h3 class="mt-5 text-xl font-medium">Spineless Yucca Plants</h3>
+                        <p class="mt-1 font-medium text-grayColor" price="1100"> &#8369; 1100.00</p>
+                        <div class="shopping-icons flex flex-col justify-around">
+                            <i class="fas fa-heart heart"></i>
+                            <hr>
+                            <i class="fas fa-shopping-cart cart"></i>
+                        </div>
+                    </div> <!-- End Slide -->
+
+                    <div class="slide">
+                        <img src="../Images/plant7.png" alt="Plant Image" draggable="false">
+                        <h3 class="mt-5 text-xl font-medium">Shrubby Whitevein Plants</h3>
+                        <p class="mt-1 font-medium text-grayColor" price="2200"> &#8369; 2200.00</p>
+                        <div class="shopping-icons flex flex-col justify-around">
+                            <i class="fas fa-heart heart"></i>
+                            <hr>
+                            <i class="fas fa-shopping-cart cart"></i>
+                        </div>
+                    </div> <!-- End Slide -->
+
+                    <div class="slide">
+                        <img src="../Images/plant8.png" alt="Plant Image" draggable="false">
+                        <h3 class="mt-5 text-xl font-medium">Zamia Collex Plants</h3>
+                        <p class="mt-1 font-medium text-grayColor" price="3000"> &#8369; 3000.00</p>
+                        <div class="shopping-icons flex flex-col justify-around">
+                            <i class="fas fa-heart heart"></i>
+                            <hr>
+                            <i class="fas fa-shopping-cart cart"></i>
+                        </div>
+                    </div> <!-- End Slide -->
+            
+                    <div class="arrow-btn btn-prev">
+                        <i class="fas fa-arrow-left"></i>
+                    </div> <!-- End Previous Button -->
+                    <div class="arrow-btn btn-next">
+                        <i class="fas fa-arrow-right"></i>
+                    </div> <!-- End Next Button -->
+
+                </div> <!-- End Best Selling Image -->
+            </div> <!-- End Best Selling Content -->
+        </div> <!-- End Best Selling -->
+    </section> 
+
+    <section class="pb-28">
+        <div class="about-us font-family container">
+            <div class="about-us-title text-center">
+                <h2 class="text-[32px] font-bold mb-3">About Us</h2>
+                <p class="text-lg font-medium text-grayColor">Order now and appreciate the beauty of nature</p>
+            </div> <!-- End About Us Title -->
+
+            <div class="about-us-content mt-10 columns-3">
+                <div class="about-us-div text-center ms-10">
+                    <div class="icon mx-auto">
+                        <img src="../Images/plant-icon.png" alt="Plant Icon" draggable="false" width="35px">
+                    </div>
+                    <h3 class="text-lg font-bold my-4">Large Assortment</h3>
+                    <p class="font-medium text-grayColor w-[22rem]">we offer many different types of products with fewer variations in each category.</p>
+                </div> <!-- End About Us Div -->
+
+                <div class="about-us-div text-center ms-10">
+                    <div class="icon mx-auto">
+                        <img src="../Images/box-icon.png" alt="Plant Icon" draggable="false" width="35px">
+                    </div>
+                    <h3 class="text-lg font-bold my-4">Fast & Free Shipping</h3>
+                    <p class="font-medium text-grayColor w-[22rem]">4-day or less delivery time, free shipping and an expedited delivery option.</p>
+                </div> <!-- End About Us Div -->
+
+                <div class="about-us-div text-center ms-10 last-about">
+                    <div class="icon mx-auto">
+                        <img src="../Images/call-icon.png" alt="Plant Icon" draggable="false" width="35px">
+                    </div>
+                    <h3 class="text-lg font-bold my-4">24/7 Support</h3>
+                    <p class="font-medium text-grayColor w-[22rem]">answers to any business related inquiry 24/7 and in real-time.</p>
+                </div> <!-- End About Us Div -->
+            </div> <!-- End About Us Content -->
+        </div> <!-- End About US -->
+    </section>
+
+    <section>
+        <div class="categories font-family">
+            <div class="categories-title text-center">
+                <h2 class="text-[32px] font-bold mb-3">Categories</h2>
+                <p class="text-lg font-medium text-grayColor">Find what you are looking for</p>
+            </div> <!-- End Categories Title -->
+
+            <div class="categories-images px-10">
+                <div class="images flex">
+                    <div class="image-category category1 text-center mx-auto">
+                        <img src="../Images/category1.png" alt="">
+                        <h2 class="font-bold text-lg mt-5 text-blackColor">Natural Plants</h2>
+                    </div> <!-- End Image Category -->
+    
+                    <div class="image-category category2 text-center mx-auto">
+                        <img src="../Images/category2.png" alt="">
+                        <h2 class="font-bold text-lg mt-5 text-blackColor">Plant Accessories</h2>
+                    </div> <!-- End Image Category -->
+    
+                    <div class="image-category category3 text-center mx-auto">
+                        <img src="../Images/category3.png" alt="">
+                        <h2 class="font-bold text-lg mt-5 text-blackColor">Artificial Plants</h2>
+                    </div> <!-- End Image Category -->
+                </div> <!-- End Images -->
+
+                <div class="explore mt-10 text-center">
+                    <p class="font-medium text-lg text-linksColor mb-5">Here are more products that you can check out</p>
+                    <div class="explore-btn relative w-44 mx-auto">
+                        <button class="hover:opacity-80">Explore</button>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </div> <!-- End Explore Button -->
+                </div> <!-- End Explore -->
+            </div> <!-- End Categories Image -->
+        </div> <!-- End Categories -->
+    </section>
+
+    <section class="mt-16">
+        <div class="feed-back font-family px-10">
+            <div class="feed-back-heading flex justify-between items-center">
+                <h2 class="text-[32px] font-bold w-[450px]">What customers say about GREEMIND?</h2>
+                <ul class="dots flex">
+                    <li class="activeDot"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div> <!-- End Feed Back Heading -->
+
+           <div class="feed-back-slider mt-12">
+                <div class="feed-back-content">
+                    <div class="feed-back-item">
+                        <p class="text-lg font-medium text-blackColorOpacity text-justify">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, 
+                            ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                            per inceptos himenaeos.
+                        </p>
+                        <div class="feed-back-writer flex justify-between items-center">
+                            <div class="feed-back-image flex items-center">
+                                <i class="fas fa-quote-left quote"></i>
+                                <img src="../Images/feed-back1.png" alt="Feed Back">
+                                <div class="feed-back-name -translate-x-10 sm:-translate-x-40">
+                                    <h3 class="font-extrabold">John Doe</h3>
+                                    <p class="text-[12px] text-linksColor font-medium">Youtuber</p>
+                                </div> <!-- End Feed Back Name -->
+                            </div> <!-- End Feed Back Image -->
+
+                            <div class="feed-back-rate flex items-center">
+                                <i class="fas fa-star"></i>
+                                <h3 class="font-bold ms-3">4.5</h3>
+                            </div> <!-- End Feed Back Rate -->
+                        </div> <!-- End Feed Back Writer -->
+                    </div> <!-- End Feed Back Item -->
+
+                    <div class="feed-back-item">
+                        <p class="text-lg font-medium text-blackColorOpacity text-justify">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, 
+                            ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                            per inceptos himenaeos.
+                        </p>
+                        <div class="feed-back-writer flex justify-between items-center">
+                            <div class="feed-back-image flex items-center">
+                                <i class="fas fa-quote-left quote"></i>
+                                <img src="../Images/feed-back2.png" class="feed-back-image2" alt="Feed Back">
+                                <div class="feed-back-name -translate-x-10">
+                                    <h3 class="font-extrabold">John Doe</h3>
+                                    <p class="text-[12px] text-linksColor font-medium">Youtuber</p>
+                                </div> <!-- End Feed Back Name -->
+                            </div> <!-- End Feed Back Image -->
+
+                            <div class="feed-back-rate flex items-center">
+                                <i class="fas fa-star"></i>
+                                <h3 class="font-bold ms-3">4.5</h3>
+                            </div> <!-- End Feed Back Rate -->
+                        </div> <!-- End Feed Back Writer -->
+                    </div> <!-- End Feed Back Item -->
+
+                    <div class="feed-back-item">
+                        <p class="text-lg font-medium text-blackColorOpacity text-justify">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, 
+                            ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                            per inceptos himenaeos.
+                        </p>
+                        <div class="feed-back-writer flex justify-between items-center">
+                            <div class="feed-back-image flex items-center">
+                                <i class="fas fa-quote-left quote"></i>
+                                <img src="../Images/feed-back1.png" alt="Feed Back">
+                                <div class="feed-back-name -translate-x-10">
+                                    <h3 class="font-extrabold">John Doe</h3>
+                                    <p class="text-[12px] text-linksColor font-medium">Youtuber</p>
+                                </div> <!-- End Feed Back Name -->
+                            </div> <!-- End Feed Back Image -->
+
+                            <div class="feed-back-rate flex items-center">
+                                <i class="fas fa-star"></i>
+                                <h3 class="font-bold ms-3">4.5</h3>
+                            </div> <!-- End Feed Back Rate -->
+                        </div> <!-- End Feed Back Writer -->
+                    </div> <!-- End Feed Back Item -->
+                </div> <!-- End Feed Back Content -->
+           </div> <!-- End Feed Back Slider -->
+        </div> <!-- End Feed Back -->
+    </section>
+
+    <footer class="mt-52">
+        <div class="footer">
+            <div class="footer-all-content py-14 container ">
+                <div class="footer-content flex justify-between">
+                    <div class="footer-left">
+                        <h4>GREENMIND</h4>
+                        <p class="font-medium text-lg text-linksColor w-40 mb-10">We help you find your dream plant</p>
+                        <div class="footer-icon flex">
+                           <div class="footer-icon-item">
+                                 <i class="fab fa-facebook-f"></i>
+                           </div> <!-- End Footer Icon Item -->
+                           <div class="footer-icon-item">
+                                <i class="fab fa-instagram"></i>
+                          </div> <!-- End Footer Icon Item -->
+                          <div class="footer-icon-item">
+                                <i class="fab fa-twitter"></i>
+                          </div> <!-- End Footer Icon Item -->
+                        </div> <!-- End Footer Icon  -->
+                    </div> <!-- End Footer Left -->
+                    
+                    <div class="footer-right flex">
+                        <ul class="information list-none">
+                            <li class="font-bold text-lg text-blackColor title">Information</li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul> <!-- End Information -->
+                    
+                        <ul class="company list-none mx-14">
+                            <li class="font-bold text-lg text-blackColor title">Company</li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="#">Our story</a></li>
+                        </ul> <!-- End Information -->
+                    
+                        <ul class="contact list-none">
+                            <li class="font-bold text-lg text-blackColor title">Contact</li>
+                            <li><a href="#">Getting Started</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Resources</a></li>
+                        </ul> <!-- End Information -->
+                    </div> <!-- End Footer Right -->
+                </div> <!-- End Footer Contnet -->
+                <p class="text-lg text-linksColor font-medium mt-24 copy-right">2023 all Right Reserved Term of use GREENMIND</p>
+            </div> <!-- End Footer All Content -->
+        </div> <!-- End Footer -->
+    </footer>
+
+    <aside>
+        <div class="colors">
+            <div class="color color1" value="#34495E"></div>
+            <div class="color color2" value="#512E5F"></div>
+            <div class="color color3" value="#0B5345"></div>
+            <div class="color color4" value="#008080"></div>
+            <div class="color color5" value="#B1D9DB"></div>
+        </div>
+        <i class="fas fa-angle-double-right arrow"></i>
+   </aside> <!-- End Aside -->
+
+   <button class="scroll">
+        <i class="fas fa-arrow-up"></i>
+   </button>
+    <script src="../JS/homeCode.js"></script>
+</body>
+</html>
+

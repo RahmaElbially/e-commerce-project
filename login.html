@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Telex&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/all.css">
+    <link rel="stylesheet" href="../CSS/AuthenticationStyle.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <header>
+        <div class="brandName">
+            <h2>GREENMIND</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="#" id="login-link">Login</a></li>
+                    <li><a href="#" id="register-link">Register</a></li>
+                </ul>
+            </nav>
+        </div> <!-- End Brand Name -->
+    </header> <!-- End Header -->
+
+    <section>
+        <div class="background">
+            <div class="image">
+                <div class="logoDiv">
+                    <img src="../Images/logo.png" alt="Logo Image" class="logo">
+                    <p>Find what do you need !</p>
+                </div>
+                <img src="../Images/Abstraction.png" alt="Abstraction Image" class="abstraction">
+            </div> <!-- End Images -->
+
+            <div class="form login-form">
+                <div class="form-content">
+                    <h2>Login Portal</h2>
+
+                    <div class="social login-social">
+                        <a href="https://www.gmail.com" class="google">
+                            <img src="../Images/search 1.png" alt="google image">
+                            <p>Sign In With Google</p>
+                        </a> <!-- End Google -->
+                        <a href="https://www.facebook.com" class="facebook">
+                            <img src="../Images/facebook 1.png" alt="facebook image">
+                            <p>Sign In With Facebbok</p>
+                        </a> <!-- End Facebook -->
+                    </div> <!-- End Social -->
+
+                    <p class="or login-OR">- OR -</p>
+
+                    <form action="">
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" name="email" class="loginEmail">
+                        <p class="error error-email">This field should't be empty !</p>
+                        <label for="password">password</label>
+                        <div class="password">
+                            <input type="password" id="password" name="password" class="loginPassword">
+                            <img src="../Images/close.png" alt="Close Eye" id="close" >
+                        </div>
+                        <p class="error error-password">This field should't be empty !</p>
+                    </form>
+
+                    <button class="loginBtn">Login To Account</button>
+
+                    <p class="have-account">You don't have account? <a href="#" id="register-word">Register</a></p>
+                </div>
+
+            </div> <!-- End Form -->
+        </div><!-- End Background -->
+    </section> <!-- End Register Form -->
+
+    <aside>
+        <div class="colors">
+            <div class="color color1" value="#34495E"></div>
+            <div class="color color2" value="#512E5F"></div>
+            <div class="color color3" value="#0B5345"></div>
+            <div class="color color4" value="#008080"></div>
+            <div class="color color5" value="#B1D9DB"></div>
+        </div>
+        <i class="fas fa-angle-double-right arrow"></i>
+   </aside>
+
+    <script src="../JS/loginCode.js"></script>
+</body>
+</html>

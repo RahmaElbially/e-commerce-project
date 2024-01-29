@@ -1,0 +1,379 @@
+:root{
+    --body-color: #E5E5E5;
+    --bg-color: #B1D9DB;
+    --white-color: #FFF;
+    --border-color: #D8D3D3;
+    --p-color: #5C5C5C;
+    --input-border-color: #C4C4C4;
+    --button-color: #A7CCCE;
+    --login-color: #91B3B5;
+    --hover-color: #155b8d;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--body-color);
+    font-family: "Telex", sans-serif;
+}
+/* Start Header */
+header{
+    background-color: var(--white-color);
+}
+header .brandName{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding-top: 5px;
+}
+header .brandName h2{
+    font-weight: 100;
+    color: var(--login-color);
+}
+header .brandName nav ul{
+    display: flex;
+    list-style: none;
+}
+header .brandName nav ul li{
+    margin-left: 70px;
+}
+header .brandName nav a{
+    text-decoration: none;
+    color: var(--login-color);
+    position: relative;
+}
+header .brandName nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 0;
+    height: 2px;
+    background-color: var(--hover-color);
+    transition:  0.5s; 
+}
+header .brandName nav a:hover::after {
+    width: 100%;
+}
+header .brandName nav a:hover{
+    color: var(--hover-color);
+}
+/* End Header */
+
+/* Start Background */
+.background{
+    width: 60%;
+    height: 80vh;
+    background-color: var(--bg-color);
+    display: flex;
+    margin: 40px auto;
+}
+.background .image{
+    width: 40%;
+}
+.background .image .logo{
+    width: 100px;
+}
+.background .image p{
+    color: var(--white-color);
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin: 10px 0 0 30px;
+    text-transform: capitalize;  
+}
+.background .image .abstraction{
+    width: 100%;
+    margin: 20px 0 0 60px;
+    position: relative;
+    z-index: 1;
+}
+/* End Background */
+
+/* Start Form */
+.background .form{
+    width: 60%;
+    background-color: var(--white-color);
+    height: 100%;
+    border-radius: 40px 0 0 40px;
+}
+.background .form .form-content{
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+}
+.background .form .form-content h2{
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+.background .form .form-content .social{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 20px 0;
+}
+.background .form .form-content .social .google,
+.background .form .form-content .social .facebook{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    padding: 10px;
+}
+.background .form .form-content .social a{
+    text-decoration: none;
+}
+.background .form .form-content .social .google p,
+.background .form .form-content .social .facebook p{
+    font-size: 12px;
+    color: var(--p-color);
+}
+.background .form .form-content .social .google img,
+.background .form .form-content .social .facebook img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.background .form .form-content .or{
+    text-align: center;
+    color: var(--p-color);
+    margin-bottom: 30px;
+}
+
+.background .form .form-content form label{
+    display: block;
+    font-size: 12px;
+    color: var(--p-color);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.background .form .form-content form input{
+    border: none;
+    border-bottom: 1px solid var(--input-border-color);
+    outline: none;
+    width: 100%;
+    margin: 5px 0 25px 0;
+    padding-left: 2px;
+}
+.background .form .form-content form .password{
+    display: flex;
+    position: relative;
+}
+.background .form .form-content form .password img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 3%;
+    top: -22%;
+    cursor: pointer;
+}
+.background .form .form-content form .password [src="../Images/open.png"]{
+    right: 1%;
+    top: -30%;
+    width: 30px;
+    height: 30px;
+}
+.background .form .form-content button{
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--white-color);
+    background-color: var(--button-color);
+    margin-bottom: 30px;
+}
+.background .form .form-content button:hover{
+    background-color: var(--hover-color);
+}
+.background .form .form-content .have-account{
+    color: var(--p-color);
+    font-size: 14px;
+}
+.background .form .form-content .have-account a{
+    text-decoration: none;
+    color: var(--login-color);
+}
+.background .form .form-content .have-account a:hover{
+    color: var(--hover-color);
+}
+
+/* Start Error */
+.error{
+    font-size: 12px; 
+    color: red; 
+    margin-top: -20px; 
+    margin-bottom: 10px;
+    display: none;
+}
+/* End Form */
+ 
+/* Login Page */
+.background .form .form-content .login-social,
+.background .form .form-content .login-OR{
+    margin-top: 40px;
+}
+
+.background .form .form-content .loginBtn{
+    margin-top: 30px;
+}
+
+aside{
+    position: fixed;
+    top: 10%;
+    left: -15.5%;
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1.5s;
+}
+aside i{
+    font-size: 35px;
+    color: var(--bg-color);
+    cursor: pointer;
+}
+.colors{
+    display: flex;
+    margin-right: 10px;
+}
+.colors .color{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.colors .color1{
+    background-color: #34495E;
+}
+.colors .color2{
+    background-color: #512E5F;
+}
+.colors .color3{
+    background-color: #0B5345;
+}
+.colors .color4{
+    background-color: teal;
+}
+.colors .color5{
+    background-color: #B1D9DB;
+}
+.left{
+    left: 0%;
+}
+
+/* Media Query */
+
+@media (min-width:1200px) and (max-width: 1400px){
+    .background .form .form-content{
+        width: 80%;
+    }
+    .background .image .abstraction{
+        right: 10%;
+    }
+    aside{
+        left: -15%;
+    }
+}
+
+@media (min-width:992px) and (max-width: 1199px){
+    .background{
+        width: 80%;
+    }
+    .background .form .form-content{
+        width: 80%;
+    }
+    .background .image .abstraction{
+        right: 10%;
+    }
+    aside{
+        left: -19%;
+    }
+}
+
+@media (min-width:766px) and (max-width: 991px){
+    .background{
+        width: 90%;
+    }
+    .background .image .abstraction{
+        right: 10%;
+    }
+    .background .form .form-content{
+        width: 80%;
+    }
+    .background .form .form-content .social .google p,
+    .background .form .form-content .social .facebook p{
+        font-size: 10px;
+    }
+    aside{
+        left: -25%;
+    }
+}
+
+@media (max-width: 765px){
+    body{
+        height: 1250px;
+    }
+    header .brandName{
+        width: 80%;
+    }
+    .background{
+        width: 90%;
+        display: block;
+        padding: 20px 10px;
+    }
+    .background .logoDiv{
+        display: flex;
+    }
+    .background .image{
+        width: 100%;
+    }
+    .background .image .abstraction{
+        width: 70%;
+    }
+    .background .form{
+        width: 100%;
+        height: 580px;
+    }
+    .background .login-form{
+        height: 550px;
+    }
+    .background .form .form-content{
+        width: 80%;
+    }
+    .background .form .form-content h2{
+        text-align: center;
+    }
+    .background .form .form-content .social{
+        display: block;
+        width: 75%;
+        margin: auto;
+    }
+    .background .form .form-content .social a{
+        margin-top: 20px;
+    }
+    .background .form .form-content .or{
+        margin: 30px 0;
+    }
+    aside{
+        left: -33%;
+    }
+}
+
+@media (max-width: 576px){
+    body{
+        height: 1150px;
+    }
+    aside{
+        left: -41%;
+    }
+}
+

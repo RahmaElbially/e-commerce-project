@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/all.css">
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../CSS/favouriteStyle.css">
+    <title>Favourite</title>
+</head>
+<body>
+    <header>
+        <nav class="container flex items-center justify-between py-8">
+            <ul class="links flex">
+                <h2 class="text-2xl me-20">GREENMIND</h2>
+                <li class="active"><a href="#" id="home">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <div class="icons">
+                <ul class="flex">
+                    <li><a href="#"><i class="fas fa-shopping-cart hover:text-backgroundColor" id="shoppingCart"></i></a></li>
+                    <li><a href="#"><i class="fas fa-heart text-red-500" id="favourite"></i></a></li>
+                    <li><div class="vertical-line w-[1px] h-8"></div></li>
+                    
+                    <!-- User Name And Icon -->
+                    <li class="user">
+                        <a href="#" class="relative active"><i class="fas fa-user user-icon"></i></a>
+                        <p class="user-name inline ms-6"></p>
+
+                        <div class="user-btns display-none absolute top-16">
+                            <div class="user-btn1">
+                                <i class="fas fa-cog me-2"></i>
+                                <button class="mb-5">Setting</button>
+                            </div>
+                            <div class="user-btn2">
+                                <i class="fas fa-sign-out-alt me-2"></i>
+                                <button class="log-out">Logout</button>
+                            </div>
+                        </div> <!-- End User Btns -->
+                    </li> <!-- End User Name And Icon -->
+                </ul> <!-- End Icons List -->
+            </div> <!-- End Icons Div -->
+        </nav> <!-- End Nav -->
+    </header> <!-- End header -->
+
+    <hr class="container">
+
+    <section class="mt-16 favourite-item-section ">
+        <!-- <div class="favourite-item container py-10">
+            <div class="favourite-item-content flex justify-around items-center">
+                <div class="favourite-image">
+                    <img src="../Images/plant1.png" alt="" width="150px">
+                </div>
+
+                <h2 class="font-extrabold text-xl text-backgroundColor">Natural Plants</h2>
+
+                <i class="fas fa-heart text-red-500 text-2xl cursor-pointer"></i>
+            </div>
+        </div> -->
+    </section>
+
+    <aside>
+        <div class="colors">
+            <div class="color color1" value="#34495E"></div>
+            <div class="color color2" value="#512E5F"></div>
+            <div class="color color3" value="#0B5345"></div>
+            <div class="color color4" value="#008080"></div>
+            <div class="color color5" value="#B1D9DB"></div>
+        </div>
+        <i class="fas fa-angle-double-right arrow"></i>
+   </aside>
+    <script src="../JS/favouriteCode.js"></script>
+</body>
+</html>
